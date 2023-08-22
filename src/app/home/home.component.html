@@ -1,0 +1,342 @@
+<!-- Main content Start -->
+<div class="main-content">
+
+    <app-header></app-header>
+
+    <!-- Banner Section Start -->
+    <div class="rs-banner banner-home-style2">
+        <div class="container custom">
+            <div class="row y-middle">
+                <div class="col-lg-7">
+                    <div class="content-wrap">
+                        <span class="sub-text">Festival</span>
+                        <h2 class="title">Innovation Spark Festival</h2>
+                        <div class="description mb-38">
+                            Lorem ipsum dolor sit amet, tetur adipiscing elit, sed do eiusmod tempor incididunt ut.
+                        </div>
+                        <div class="btn-part">
+                            <a class="readon consultant paste-btn" href="contact.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 pl-50 md-pl-15 pt-90 md-pt-60 md-mb-100 xs-mb-70">
+                    <div class="rs-contact ">
+                        <div class="contact-wrap">
+                            <div class="content-part mb-30">
+                                <h2 class="title">Book Appointment</h2>
+                                <div class="description">
+                                    We here to help you 24/7 with experts
+                                </div>
+                            </div>
+                            <div id="form-messages"></div>
+                            <form id="contact-form" method="post" action="mailer.php">
+                                <fieldset>
+                                    <div class="row">
+                                        <div class="col-lg-12 mb-12">
+                                            <input class="from-control" type="text" id="name" name="name" placeholder="Name" required="">
+                                        </div>
+                                        <div class="col-lg-12 mb-12">
+                                            <input class="from-control" type="text" id="email" name="email" placeholder="E-Mail" required="">
+                                        </div>
+                                        <div class="col-lg-12 mb-12">
+                                            <input class="from-control" type="text" id="phone" name="phone" placeholder="Phone Number" required="">
+                                        </div>
+                                        <div class="col-lg-12 mb-12">
+                                            <textarea class="from-control" id="message" name="message" placeholder="Enter Query Here" required=""></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-0">
+                                        <input class="submit-btn" type="submit" value="Book Appointment Now">
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner Section End -->
+
+
+    <!-- About Section Start -->
+    <div class="rs-about main-home pt-100 md-pt-70 md-pb-70">
+        <div class="container">
+            <div class="row y-middle">
+                <div class="col-lg-6 md-mb-50">
+                    <div class="images-part">
+                        <img src="assets/images/about/about-5.png" alt="Images">
+                    </div>
+                </div>
+                <div class="col-lg-6 pl-46 md-pl-15">
+                    <div class="sec-title3">
+                        <h2 class="title">
+                            About Innovation Spark Festival
+                        </h2>
+                        <p class="margin-0 pb-40 mt-30">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book.</p>
+                        <ul class="icon-item pb-30">
+                            <li>
+                                <span class="list-icon">
+                                        <i class="fa fa-check"></i> 
+                                    </span>
+                                <span class="list-text">Life is an event. Make it memorable.</span>
+                            </li>
+                            <li>
+                                <span class="list-icon">
+                                        <i class="fa fa-check"></i> 
+                                    </span>
+                                <span class="list-text">Make any occasion unforgettable</span>
+                            </li>
+                            <li>
+                                <span class="list-icon">
+                                        <i class="fa fa-check"></i> 
+                                    </span>
+                                <span class="list-text">Exclusive events, priceless memories</span>
+                            </li>
+                            <li>
+                                <span class="list-icon">
+                                        <i class="fa fa-check"></i> 
+                                    </span>
+                                <span class="list-text">Remembered always</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Section End -->
+
+    <div class="rs-project style7 pt-30 pb-50 md-pt-70 md-pb-70">
+
+        <!-- Project Section Start -->
+        <div class="container custom">
+            <div class="row y-middle">
+                <div class="col-lg-6">
+                    <div class="sec-title2 mb-55 md-mb-30">
+                        <!-- <div class="sub-text">Previse</div> -->
+                        <h2 class="title mb-23">Event <span class="color-green">Highlights</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-lg-6 pl-60 md-pl-15 mb-30">
+                    <p class="desc mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid pl-30 pr-30">
+            <div class="event-highlights">
+                <owl-carousel-o class="rs-carousel " [options]="eventHighlightsOptions">
+                    <ng-container *ngFor="let slide of eventHighlightsSlides">
+                        <ng-template carouselSlide id="{{slide.id}}">
+                            <div class="slide project-item">
+                                <div class="project-img">
+                                    <img [src]="slide.src" [alt]="slide.alt" [title]="slide.title">
+                                </div>
+                                <div class="project-content">
+                                    <a class="p-icon" href="project-single.html"><i class="flaticon-right-arrow"></i></a>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
+            </div>
+        </div>
+        <!-- Project Section End -->
+
+        <!-- Blog Start -->
+        <div class="rs-blog style2 home5-blog-style bg19 pt-50 pb-100 md-pt-70 md-pb-70">
+            <div class="container">
+                <div class="row y-middle md-mb-30">
+                    <div class="col-lg-5 mb-20 md-mb-10">
+                        <div class="sec-title3 mb-10">
+                            <span class="sub-title paste-color">Events</span>
+                            <h2 class="title pb-20">
+                                Up Coming Events
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 mb-20">
+                        <div class="btn-part text-right md-left">
+                            <a class="readon consultant paste-btn more" href="blog-details.html">View Updates</a>
+                        </div>
+                    </div>
+                </div>
+
+                <owl-carousel-o [options]="upComingEventsOptions">
+                    <ng-container class="rs-carousel" *ngFor="let slide of upComingEventsSlides">
+                        <ng-template carouselSlide id="{{slide.id}}">
+                            <div class="blog-item">
+                                <div class="image-wrap">
+                                    <a href="#">
+                                        <img [src]="slide.src" [alt]="slide.alt" [title]="slide.title">
+                                    </a>
+                                    <ul class="post-categories">
+                                        <li><a href="blog-details.html">Read More</a></li>
+                                    </ul>
+                                </div>
+                                <div class="blog-content">
+                                    <ul class="blog-meta mb-10">
+                                        <li class="admin"> <i class="fa fa-user-o"></i> DAVID BRUNET</li>
+                                        <li class="date"> <i class="fa fa-calendar-check-o"></i> 16 Aug 2021</li>
+                                    </ul>
+                                    <h3 class="blog-title"><a href="blog-details.html">Greater Houston Hamfest / ISparkfest</a></h3>
+                                    <p>Join us on March 7, 2020 from 8am – 3:30 pm at the Fort Bend County Fairgrounds as we bring ...</p>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
+            </div>
+        </div>
+        <!-- Blog End -->
+
+
+
+        <section class="event-section__block padding-tb">
+            <div class="container">
+                <div class="row y-middle md-mb-30">
+                    <div class="col-lg-5 mb-20 md-mb-10">
+                        <div class="sec-title3 mb-10">
+                            <span class="sub-title paste-color">Future</span>
+                            <h2 class="title pb-20">
+                                Future Events
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 mb-20">
+                        <div class="btn-part text-right md-left">
+                            <a class="readon consultant paste-btn more" href="events.html">View All</a>
+                        </div>
+                    </div>
+                </div>
+
+                <ng-container>
+                    <div class="row mb-30" *ngFor="let event of futureEvents">
+                        <div class="col-lg-2">
+                            <div class="event_date d-flex flex-column align-items-center justify-content-center">
+                                <div class="event_day" [textContent]="event.day"></div>
+                                <div class="event_month" [textContent]="event.month"></div>
+                                <span [textContent]="event.year"></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="event_content">
+                                <div class="event_name">
+                                    <a class="trans_200" href="events-detail.html" [textContent]="event.name"></a>
+                                </div>
+                                <div class="event_location" [textContent]="event.location"></div>
+                                <p>
+                                    <span [textContent]="event.description"></span>
+                                    <a href="events-detail.html"><i>Read More</i></a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="event_image">
+                                <img [src]="event.imgsrc" alt="#">
+                            </div>
+                        </div>
+                    </div>
+                </ng-container>
+            </div>
+        </section>
+
+
+        <!-- Premium Services Section Start -->
+        <div id="rs-services" class="rs-services style2 gray-bg pt-100 pb-100 md-pt-70 md-pb-70">
+            <div class="container">
+                <div class="sec-title2 d-flex align-items-center mb-60 md-mb-40">
+                    <div class="first-half">
+                        <div class="sub-text">Videos</div>
+                        <h2 class="title mb-0 md-pb-20">Houston Area Combat Robotics <span>(HACR)</span>
+                        </h2>
+                    </div>
+                    <div class="last-half">
+                        <p class="desc mb-0 pl-20 md-pl-15">Lorem ipsum dolor sit amet, tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim aquis Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+
+                <owl-carousel-o [options]="yotubeVideosOptions">
+                    <ng-container class="rs-carousel" *ngFor="let slide of youtubeVideosSlides">
+                        <ng-template carouselSlide id="{{slide.id}}">
+                            <div class="service-wrap">
+                                <div class="image-part">
+                                    <figure>
+                                        <a data-fancybox data-width="640" data-height="360" href="https://youtu.be/Ry-CBSKauBg">
+                                            <img class="card-img-top img-fluid" [src]="slide.imgsrc" />
+                                            <img class="youtube-icon-history" src="assets/images/youtube.png">
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="content-part">
+                                    <div class="desc" [textContent]="slide.datetime"></div>
+                                    <h3 class="title">
+                                        <a href="business-planning.html" [textContent]="slide.title"></a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
+
+            </div>
+        </div>
+        <!-- Premium Services Section End -->
+
+
+        <!-- Contact Section Start -->
+        <div class="rs-contact contact-style2 bg11 pt-95 pb-100 md-pt-65 md-pb-70">
+            <div class="container">
+                <div class="sec-title2 mb-55 md-mb-35 text-center text-lg-start">
+                    <div class="sub-text">Contact</div>
+                    <h2 class="title mb-0">Let us help your business <br> to move <span>forward.</span></h2>
+                </div>
+                <div class="row y-middle">
+                    <div class="col-lg-6 md-mb-50">
+                        <div class="contact-img">
+                            <img src="assets/images/contact/computer.jpg" alt="Contact">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contact-wrap">
+                            <div id="form-messages"></div>
+                            <form id="contact-form" method="post" action="mailer.php">
+                                <fieldset>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
+                                            <input class="from-control" type="text" id="name" name="name" placeholder="Name" required="">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
+                                            <input class="from-control" type="text" id="email" name="email" placeholder="E-Mail" required="">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
+                                            <input class="from-control" type="text" id="phone" name="phone" placeholder="Phone Number" required="">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
+                                            <input class="from-control" type="text" id="Website" name="subject" placeholder="Your Website" required="">
+                                        </div>
+
+                                        <div class="col-lg-12 mb-30">
+                                            <textarea class="from-control" id="message" name="message" placeholder="Your message Here" required=""></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="btn-part">
+                                        <div class="form-group mb-0">
+                                            <input class="readon submit" type="submit" value="Submit Now">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact Section End -->
+
+    </div>
+    <!-- Main content End -->
+
+    <app-footer></app-footer>

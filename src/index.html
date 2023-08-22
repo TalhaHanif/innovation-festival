@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>InnovationFestival</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Bootstrap v4.4.1 css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <!-- font-awesome css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <!-- flaticon css -->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/flaticon.css">
+    <!-- animate css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <!-- owl.carousel css -->
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css"> -->
+    <!-- off canvas css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/off-canvas.css">
+    <!-- magnific popup css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
+    <!-- Main Menu css -->
+    <link rel="stylesheet" href="assets/css/rsmenu-main.css">
+    <!-- spacing css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/rs-spacing.css">
+
+
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css'>
+    <link rel='stylesheet' href='https://codepen.io/fancyapps/pen/Kxdwjj.css'>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+
+<body class="home-paste-color">
+    <div class="offwrap"></div>
+
+    <!--Preloader start here-->
+    <div id="pre-load">
+        <div id="loader" class="loader">
+            <div class="loader-container">
+                <div class='loader-icon'><img src="assets/images/fav.png" alt="Bizup Consulting Business"></div>
+            </div>
+        </div>
+    </div>
+    <!--Preloader area end here-->
+
+    <app-root></app-root>
+
+    <script src='https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js'></script>
+    <script type="text/javascript">
+        //  Set caption from card text
+        $('.card-deck a').fancybox({
+            caption: function(instance, item) {
+                return $(this).parent().find('.card-text').html();
+            }
+        });
+    </script>
+
+</body>
+
+</html>
